@@ -19,17 +19,17 @@ class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
 
   moveToHome(BuildContext context) async {
-    if(_formKey.currentState!.validate()){
-    setState(() {
-      changeButton = true;
-    });
-    await Future.delayed(
-      Duration(milliseconds: 220),
-    );
-    await Navigator.pushNamed(context, MyRoutes.homeRoute);
-    setState(() {
-      changeButton = false;
-    });
+    if (_formKey.currentState!.validate()) {
+      setState(() {
+        changeButton = true;
+      });
+      await Future.delayed(
+        Duration(milliseconds: 220),
+      );
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      setState(() {
+        changeButton = false;
+      });
     }
   }
 
