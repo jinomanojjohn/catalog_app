@@ -1,5 +1,5 @@
 class Item {
-  final String id;
+  final num id;
   final String name;
   final String desc;
   final num price;
@@ -17,12 +17,11 @@ class Item {
 
 final products = [
   Item(
-    id: "001",
-    name: "IPhone 12 Pro",
-    desc: '"Apple Iphone 12 Gen"',
-    price: 999,
-    color: "#33505a",
-    image:
-        "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP831/iphone12pro-ios14.png",
+        id: 1,
+        name: "iPhone 12 Pro",
+        desc: "Apple iPhone 12th generation",
+        price: 999,
+        color: "#33505a",
+        image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1604021661000",
   )
 ];
